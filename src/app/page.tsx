@@ -1,9 +1,14 @@
-import React from "react";
+import Link from "next/link";
 
 type Props = {};
 
-const page = (props: Props) => {
-  return <div>HELLO</div>;
+const page = ({}: Props) => {
+  return (
+    <>
+      <div>HOME</div>
+      <Link href={"/login"}>Go to Login</Link>
+    </>
+  );
 };
 
 export default page;
